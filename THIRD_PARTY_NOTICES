@@ -1,0 +1,39 @@
+paging_kit's own code is MIT (see LICENSE). It adapts the public API of a
+third-party package, whose license follows.
+
+================================================================================
+infinite_scroll_pagination 4.1.0
+https://github.com/EdsonBueno/infinite_scroll_pagination
+https://pub.dev/packages/infinite_scroll_pagination
+================================================================================
+
+What was adapted: the public API shape. That is the names PagingController,
+PagingState, PagingStatus, PagedChildBuilderDelegate and PagedListView; their
+constructor, method and builder names (firstPageKey, invisibleItemsThreshold,
+itemList, error, nextPageKey, appendPage, appendLastPage, refresh,
+retryLastFailedRequest, addPageRequestListener, addStatusListener,
+*IndicatorBuilder); and the rules that derive a PagingStatus from a
+PagingState. paging_kit's code was written from scratch for DartNative. No
+source file was copied.
+
+MIT License
+
+Copyright (c) 2021 Edson Bueno
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
