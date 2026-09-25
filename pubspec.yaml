@@ -1,0 +1,23 @@
+name: paging_kit
+description: >-
+  Infinite-scroll pagination for DartNative apps: PagingController,
+  PagedFastList and PagedListView with infinite_scroll_pagination 4's names,
+  guarded against double page requests and stale pages after a refresh.
+version: 0.1.0
+homepage: https://github.com/AbdurahmanAlmehdi/dartnative_paging
+repository: https://github.com/AbdurahmanAlmehdi/dartnative_paging
+issue_tracker: https://github.com/AbdurahmanAlmehdi/dartnative_paging/issues
+topics:
+  - dartnative
+  - pagination
+  - infinite-scroll
+
+environment:
+  sdk: ^3.9.0
+
+dependencies:
+  dartnative: ^1.0.0
+
+dev_dependencies:
+  lints: ^6.0.0
+  test: ^1.25.0

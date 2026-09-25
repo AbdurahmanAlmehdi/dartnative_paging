@@ -1,0 +1,7 @@
+.dart_tool/
+build/
+dist/
+.idea/
+.cursor/
+.github/
+.claude/
