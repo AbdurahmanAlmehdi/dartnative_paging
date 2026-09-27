@@ -116,6 +116,7 @@ class _RowsScreenState extends State<RowsScreen> {
   Widget _list() {
     return PagedFastList<int, String>.separated(
       pagingController: _pagingController,
+      keepAliveCount: 30,
       padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
       separatorBuilder: (_, _) => const SizedBox(height: 8),
       builderDelegate: PagedChildBuilderDelegate<String>(

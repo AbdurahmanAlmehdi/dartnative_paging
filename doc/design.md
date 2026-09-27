@@ -150,10 +150,10 @@ or action until the framework has one. See the README's "Framework gaps".
 ## Framework gaps found on the simulator (iOS 26.0)
 
 - With `FastList(keepAliveCount: 30)`, the native row count fell behind
-  `itemCount` after about 10 appends: 382 native rows against 400. Paging
-  stalled, because rows past 382 can't be reached. The example leaves
-  `keepAliveCount` off, and the README advises doing the same for now. The
-  widget still passes the parameter through.
+  `itemCount` after about 10 appends: 382 native rows against 400, and
+  paging stalled. Fixed in the framework (DartNative/dartnative#54; SDK
+  `70531222383` pages to all 300 items), so the example now sets
+  `keepAliveCount: 30` again.
 - `AppBar` over the list crashed in `_dnEnsureBarScrollEdgeEffect`
   (unrecognized selector `setScrollView:` on
   `UIScrollEdgeElementContainerInteraction`). The example uses a header row.

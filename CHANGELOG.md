@@ -1,3 +1,10 @@
+## 0.1.1
+
+- `keepAliveCount` works on paged lists: the framework bug that made the
+  list lose rows as it grew is fixed (DartNative/dartnative#54, SDK
+  `70531222383`). The README's warning is gone and the example uses
+  `keepAliveCount: 30`.
+
 ## 0.1.0
 
 - First release: `PagingController`, `PagingState`, `PagingStatus` and
