@@ -1,3 +1,9 @@
+## 0.1.2
+
+- The example uses an `AppBar` again. Its crash on the iOS 26.0 simulator came
+  from a beta-2 runtime (23A5276e), not from released iOS 26
+  (DartNative/dartnative#48), so the README no longer warns about it.
+
 ## 0.1.1
 
 - `keepAliveCount` works on paged lists: the framework bug that made the

@@ -162,22 +162,11 @@ infinite_scroll_pagination **5**'s API (`PagingState` with `fetchNextPage`,
 
 ## Framework gaps
 
-These were found while building the example on an iPhone 16 Pro Max
-simulator running iOS 26.0.
+Found while building the example.
 
 - **No pull-to-refresh.** DartNative has no `RefreshIndicator`
   ([DartNative/dartnative#44](https://github.com/DartNative/dartnative/issues/44)).
   Until it does, call `refresh()` from a button or an app-bar action.
-- **`AppBar` crashes on iOS 26.0.** A `Scaffold` with an `AppBar` over the
-  list crashed in `_dnEnsureBarScrollEdgeEffect` with
-  `-[UIScrollEdgeElementContainerInteraction setScrollView:]: unrecognized
-  selector`, which suggests an API added after 26.0
-  ([DartNative/dartnative#48](https://github.com/DartNative/dartnative/issues/48)).
-  The example uses a plain header row instead.
-
-  ```dart
-  Scaffold(appBar: AppBar(title: const Text('x')), body: FastList(...))
-  ```
 
 ## Example
 

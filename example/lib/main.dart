@@ -76,40 +76,20 @@ class _RowsScreenState extends State<RowsScreen> {
 
   @override
   Widget build(BuildContext context) {
-    // No AppBar: on the iOS 26.0 simulator the bar's scroll-edge effect
-    // crashes DartNative (see the README's framework gaps).
     return Scaffold(
       brightness: Brightness.light,
       backgroundColor: const Color(0xFFFFFFFF),
-      body: SafeArea(
-        child: Column(
-          children: [
-            Padding(
-              padding: const EdgeInsets.fromLTRB(16, 8, 8, 0),
-              child: Row(
-                children: [
-                  const Expanded(
-                    child: Text(
-                      'paging_kit',
-                      style: TextStyle(
-                        fontSize: 22,
-                        fontWeight: FontWeight.bold,
-                        color: Color(0xFF111111),
-                      ),
-                    ),
-                  ),
-                  Button(
-                    title: 'Refresh',
-                    variant: ButtonVariant.plain,
-                    onPressed: _refresh,
-                  ),
-                ],
-              ),
-            ),
-            Expanded(child: _list()),
-          ],
-        ),
+      appBar: AppBar(
+        title: const Text('paging_kit'),
+        actions: [
+          Button(
+            title: 'Refresh',
+            variant: ButtonVariant.plain,
+            onPressed: _refresh,
+          ),
+        ],
       ),
+      body: _list(),
     );
   }
 
